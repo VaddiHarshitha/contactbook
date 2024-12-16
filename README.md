@@ -25,13 +25,18 @@ In the contactbook-frontend folder we have the Docekerfile to create an image fo
 Run the following commands:<br />
 
 **cd contactbook-backend**<br />
+Copy the contents of Dockerfile from backend and remove the old one . <br />
+**rm Dockerfile.txt<br />
+vi Dockerfile**  -paste the content in it .<br />
 **docker build -t django-backend .** -building an image for backend<br />
 **docker network create contactbook-network** create a network to establish the communication between the frontend and Backend container.<br />
 **docker run -d --name django-backend --network contactbook-network -p 8000:8000 django-backend** - creating and starting the backend container with the above image.<br />
 
 **cd ..<br />
 cd contactbook-frontend**<br />
-
+Copy the contents of Dockerfile from backend and remove the old one . <br />
+**rm Dockerfile.txt<br />
+vi Dockerfile**  -paste the content in it .<br />
 **docker build -t react-frontend .** - building an image for frontend <br />
 **docker run -d --name react-frontend --network contactbook-network -p 3000:3000 react-frontend** -creating and starting the frontend container with the above image.<br />
 
