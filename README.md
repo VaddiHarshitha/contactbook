@@ -1,12 +1,12 @@
-This Repository consists of Frontend folders and Backethrough nd folders.
-**Frontend folders :**
-public, src
+This Repository consists of Frontend folders and Backend folders.<br /> <br />
+**Frontend folders :** <br /><br/>
+public, src<br />
 To run the react folder we have to use the **npm start** command through navigating to src folder in it.
 
-**Backend folders:**
-contactbookproject,contactbookapp
+**Backend folders:** <br />
+contactbookproject,contactbookapp <br />
 
-To run the django server , we use the following commands :
-**python manage.py makemigrations**
-**python manage.py migrate**
-**python manage.py runserver**
+To run the django server , we use the following commands :<br />
+**python manage.py makemigrations**<br />
+**python manage.py migrate**<br />
+**python manage.py runserver**<br />
