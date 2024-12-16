@@ -7,6 +7,6 @@ To run the react folder we have to use the **npm start** command through navigat
 contactbookproject,contactbookapp
 
 To run the django server , we use the following commands :
-**python manage.py makemigrations
-python manage.py migrate
-python manage.py runserver**
+**python manage.py makemigrations**
+**python manage.py migrate**
+**python manage.py runserver**
