@@ -40,5 +40,9 @@ The containers created and started and they are up and it is accesssible using t
 Backend endpoint:<br />
 http://127.0.0.1:8000/api/contacts/<br />
 
+After accessing the backend you should enter the username and passowrd . <br />
+**Username:Harshitha <br />
+Password:harshitha123** <br />
+
 frontend endpoint :<br />
 http://127.0.0.1:3000<br />
