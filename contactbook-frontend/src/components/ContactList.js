@@ -1,16 +1,17 @@
-import API from "../utils/api"; // Ensure this import is correct based on your API setup
+import API from "../utils/api"; 
+import {useState,useEffect} from 'react';
 
 const ContactList = ({ searchQuery, pageSize }) => {
   const [contacts, setContacts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [sortOrder, setSortOrder] = useState('asc'); // State to track sorting order
+  const [sortOrder, setSortOrder] = useState('asc'); 
 
   useEffect(() => {
     fetchContacts(); // Fetch the contacts when the component mounts
   }, []);
 
   const fetchContacts = () => {
-    API.get("contacts/") // Adjust this URL if necessary based on your API
+    API.get("contacts/") 
       .then((response) => setContacts(response.data))
       .catch((error) => console.error("Error fetching contacts:", error));
   };
