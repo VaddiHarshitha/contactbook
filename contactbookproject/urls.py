@@ -20,18 +20,10 @@ from rest_framework.routers import DefaultRouter
 from contactbookapp.views import Contactgetpost,Contactdetail,search_contacts
 from rest_framework.authtoken.views import obtain_auth_token
 
-# router = DefaultRouter()
-# router.register(r'contacts', ContactViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('api/', include(router.urls)),
     path('api/contacts/', Contactgetpost.as_view(), name='contact-list-create'),
     path('api/contacts/<int:pk>/', Contactdetail.as_view(), name='contact-detail'),
     path('api/contacts/search/', search_contacts, name='search_contacts'),
     path('api-token-auth/', obtain_auth_token, name='api_token_auth'),
-
-    # path('post/',PostBooklist),
-    # path('update/<int:id>/',updateBooklist),
-    # path('delete/<int:id>/',deleteBooklist),
-    # path('books/',Booklist),
 ]
